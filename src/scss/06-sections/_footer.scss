@@ -1,0 +1,72 @@
+.info{
+    @include flex(flex, space-between, flex-start, column, nowrap);
+    width: 100%;
+    @media(min-width: $mq-2){
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+.faq{
+    @include flex(flex, center, flex-start, column, wrap);
+    width: 100%;
+    padding: $gap * 1.5 0 0;
+    @media(min-width: $mq-2){
+        padding: $gap * 1.5 0 0;
+        @include flex(flex, space-between, center, row, nowrap);
+    }
+}
+.newsletter{
+    min-width: 38%;
+    display: none;
+    @media(min-width: $mq-3){ display: inherit; }
+
+    &__label{
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.26px;
+    }
+    &__input{
+        width: 100%;
+        height: 20px;
+        margin: 0 10px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid rgba($black, .15);
+        font-family: 'GraphikRegular', sans-serif;
+        border: none;
+        color: $black;
+        border-bottom: 1px solid rgba($black, .25);
+    }
+    &__submit{
+        font-family: 'GraphikMedium', sans-serif;
+        border: none;
+        background-color: $white;
+    }
+}
+.terms{
+    @include flex(flex, space-between, center, row, wrap);
+    width: 100%;
+    padding-bottom: $gap;
+
+    @media(min-width: $mq-2){
+        @include flex(flex, center, center, row, nowrap);
+        width: auto;
+        padding-bottom: 0;
+        padding-right: $gap;
+    }
+    @media(min-width: $mq-3){ padding: 0 $gap; }
+    
+    &__icon{
+        height: 20px;
+        object-fit: cover;
+    }
+    &__link{
+        margin-right: 10px;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 1.6;
+        letter-spacing: 0.26px;
+        &:nth-of-type(2){
+            @media(min-width: $mq-1){ margin-right: 0px; }
+        }
+    }
+}

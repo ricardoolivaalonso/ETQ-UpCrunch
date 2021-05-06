@@ -1,0 +1,27 @@
+body{
+    @include f-regular();
+    font-size: 12px;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    color: $black;
+    background-color: $white;
+}
+p{ font-weight: 400; }
+ul{ list-style: none; }
+a{
+    text-decoration: none;
+    color: $black;
+}
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { border-radius: 5px; background: $white; }
+::-webkit-scrollbar-thumb { background: darken($white, 20); }
+::-webkit-scrollbar-thumb:hover { background: darken($white, 30); }
+::-moz-selection {
+    background-color: complement($blue);
+    color: $white;
+}
+::selection {
+	background-color: complement($blue);
+	color: $white;
+}

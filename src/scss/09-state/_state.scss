@@ -1,0 +1,14 @@
+.is-info-visible{
+    @include flex(flex, flex-start, flex-start, column, wrap);
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    transition: .75s ease;
+}
+.is-icon-hide{ display: none; }
+.is-menu-fixed{ 
+    border: 1px solid rgba($black, .1);
+    background-color: rgba($white, .9);  
+    transition: background-color .25s ease;
+}
+.is-menu-black{ color: $black; }

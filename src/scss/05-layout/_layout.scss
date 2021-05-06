@@ -1,0 +1,46 @@
+.header,
+.hero,
+.slider,
+.top,
+.instagram,
+.store,
+.footer{
+    width: 100%;
+}
+.header{
+    position: fixed;
+    z-index: 100;
+}
+.hero{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.slider{
+    @include flex(flex, space-between, center, column, wrap);
+    padding: $gap $gap / 2 0;
+
+    @media(min-width: $mq-1){ flex-direction: row; flex-wrap: nowrap; }
+    @media(min-width: $mq-2){ padding: $gap * 2 $gap $gap; }
+}
+.top{
+    @include flex(flex, space-between, center,column, wrap);
+    padding: 0  $gap / 2 $gap;
+    
+    @media(min-width: $mq-1){ flex-direction: row; flex-wrap: nowrap; }
+    @media(min-width: $mq-2){ padding: $gap * 2 $gap ; }
+}
+.instagram{
+    padding: $gap / 2 ;
+    @media(min-width: $mq-2){ padding: $gap * 2 $gap 0 ; }
+}
+.store{
+    @include flex(flex, space-between, center, column, wrap);
+    padding: $gap $gap / 2;
+    @media(min-width: $mq-2){ padding: $gap * 2 $gap $gap; }
+}
+.footer{
+    padding: 0  $gap / 2 $gap;
+    @media(min-width: $mq-2){ padding: $gap * 2 $gap $gap; }
+    @include flex(flex, flex-start, flex-start, column, wrap);
+}

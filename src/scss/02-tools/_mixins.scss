@@ -1,0 +1,46 @@
+@mixin flex($display, $justify, $align, $direction, $wrap) {
+	display: $display;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+}
+@mixin f-regular(){
+	font-family: 'GraphikRegular',sans-serif;
+	font-weight: 400;
+}
+@mixin f-medium(){
+	font-family: 'GraphikMedium',sans-serif;
+	font-weight: 500;
+}
+@mixin f-semibold(){
+	font-family: 'GraphikRegular',sans-serif;
+	font-weight: 600;
+}
+// ------------------
+@mixin f14-400(){
+	@include f-regular();
+	font-size: 14px;
+	letter-spacing: 0.26px;
+}
+@mixin f14-500(){
+	@include f-medium();
+	font-size: 14px;
+	letter-spacing: 0.52px;
+    line-height: 2.25;
+}
+@mixin f14-600(){
+	@include f-semibold();
+	font-size: 14px;
+	letter-spacing: 0.26px;
+}
+@mixin f16-400(){
+	@include f-regular();
+	font-size: 16px;
+	letter-spacing: .65px;
+}
+@mixin f13-400(){
+	@include f-regular();
+	font-size: 13px;
+	letter-spacing: 0.26px;
+}

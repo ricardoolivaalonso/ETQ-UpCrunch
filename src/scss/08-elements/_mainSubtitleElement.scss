@@ -1,0 +1,14 @@
+.main-description{
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.26px;
+    line-height: 1.2;
+    text-align: center;
+    color: $white;
+
+    @media(min-width: $mq-2){
+        font-size: 30px;
+        color: $black;
+    }
+}

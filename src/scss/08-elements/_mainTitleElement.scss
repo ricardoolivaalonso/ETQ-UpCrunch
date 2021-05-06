@@ -1,0 +1,11 @@
+.main-title{
+    @include f14-600();
+    line-height: 3;
+    letter-spacing: 0.65px;
+    color: $white;
+
+    @media(min-width: $mq-2){
+        font-size: 16px;
+        color: $black;
+    }
+}

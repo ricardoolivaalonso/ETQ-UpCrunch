@@ -1,0 +1,1 @@
+export let MainTitleElement = ({children}) => <h2 className="main-title">{children}</h2>

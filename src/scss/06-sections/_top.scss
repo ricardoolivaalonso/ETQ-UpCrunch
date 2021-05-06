@@ -1,0 +1,25 @@
+.top{
+    &__item{
+        width: 100%;
+        margin-bottom: 20px;
+
+        @media(min-width: $mq-1){
+            width: calc(50% - #{$gap / 2.6});
+            margin-bottom: 0;
+        }
+    }
+        &__img{
+            height: 60vw;
+            width: 100%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            
+            @media(min-width: $mq-1){ height: 30vw; }
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+        }
+            &__link{ @include f14-500(); }
+            &__description{ @include f14-400(); }
+}

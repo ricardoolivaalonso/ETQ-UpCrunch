@@ -1,0 +1,25 @@
+@import '01-settings/_variables';
+@import '02-tools/_fonts';
+@import '02-tools/_mixins';
+@import "03-generic/_reset";
+@import "04-base/_tags";
+
+@import "05-layout/_layout";
+
+@import "06-sections/_header";
+@import "06-sections/_hero";
+@import "06-sections/_slider";
+@import "06-sections/_top";
+@import "06-sections/_instagram";
+@import "06-sections/_store";
+@import "06-sections/_footer";
+
+@import "07-components/_instagramCard";
+@import "07-components/_footerCard";
+
+@import "08-elements/_mainTitleElement";
+@import "08-elements/_mainSubtitleElement";
+@import "08-elements/_titleElement";
+@import "08-elements/_descriptionElement";
+
+@import "09-state/_state";

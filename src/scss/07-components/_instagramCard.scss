@@ -1,0 +1,45 @@
+.instagram{
+    &__item{
+        width: calc(50vw -  #{$gap / 1.25 } );
+        height: calc(50vw - #{$gap / 1.25 } + 120px);
+        margin-bottom: $gap;
+
+        @media(min-width: $mq-1){
+            width: calc(25vw -  #{$gap / 1.3} );
+            height: calc(25vw - #{$gap / 1.3} + 125px);
+            margin-bottom: 0;
+        }
+        @media(min-width: $mq-2){
+            width: calc(25vw -  #{$gap / 1.15} );
+            height: calc(25vw - #{$gap / 1.15} + 125px);
+        }
+    }
+        &__img{
+            width: calc(50vw -  #{$gap / 1.25 } );
+            height: calc(50vw - #{$gap / 1.25 } );
+            margin-bottom: 20px;
+
+            @media(min-width: $mq-1){
+                width: calc(25vw -  #{$gap / 1.3} );
+                height: calc(25vw - #{$gap / 1.3} );
+            }
+            @media(min-width: $mq-2){
+                width: calc(25vw -  #{$gap * 1.15} );
+                height: calc(25vw - #{$gap * 1.15} );
+            }
+        }
+        &__info{
+            display: flex;
+            flex-direction: column;
+        }
+            &__description{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &__likes{
+                @include f13-400();
+                margin-top: 20px;
+                line-height: 2;
+            }
+}
