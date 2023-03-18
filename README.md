@@ -10,4 +10,4 @@
 - react router
 - framer motion
 
-Live: https://ricardoolivaalonso-react02.herokuapp.com
+Live: https://ricardoolivaalonso-react14.vercel.app/
